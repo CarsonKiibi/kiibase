@@ -1,5 +1,6 @@
-
+#include "file.c"
 
 int main() {
-    return 0;
+    TimeRecord t = {"hi", 123, 123, 123, 123};
+    printf("%zu", sizeof(t));
 }

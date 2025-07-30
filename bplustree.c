@@ -26,6 +26,12 @@ typedef struct {
 } Entry ;
 
 typedef struct {
+    int16_t numNodes;
+    int64_t* nextKey;   // key of the next leaf node
+    InternalNode* parent;
+} LeafNode ;
 
-    Node* parent;
-} Node ;
+typedef struct {
+    int16_t numNodes;
+    int64_t* rightChild;
+} InternalNode;
